@@ -49,7 +49,6 @@ def send_message(msg)
   end
 end
 
-get '/' do
   puts "Start scanning at #{Time.now}"
 
   threads = []
@@ -60,5 +59,5 @@ get '/' do
     t.join
   end
   puts "Complete scanning at #{Time.now}"
-end
+
 
